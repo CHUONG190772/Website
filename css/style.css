@@ -55,6 +55,19 @@ body{
     height: 300rem;
 }
 
+.btn{
+    margin-top:  1rem;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background: var(--gradient);
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    color: var(--white) ;
+}
+.btn:hover{
+    background: var(--light-color) ;
+}
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -96,7 +109,7 @@ body{
 }
 
 .home{
-    min-height: 100vh;
+    min-height: 50vh;
     background: url('/img/anhcuahang2.PNG') no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,6 +142,93 @@ body{
 .about .flex .content{
     flex: 1 1 40rem;
 }
+
+.about .flex .content h3{
+    font-size: 3rem;
+    color: var(--orange);
+    margin-bottom: .5rem;
+}
+
+.about .flex .content p{
+    padding: 1rem 0;
+    font-size:  1.8rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+
+.offer-countdown{
+    background-color:rgb(121, 77, 20) ;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+}
+
+.offer-countdown .content{
+    text-align:  center;
+}
+
+.offer-countdown .content h3{
+    text-transform: uppercase;
+    font-size:  4rem;
+    color: var(--white) ;
+    margin-bottom: 1rem;
+}
+
+.offer-countdown .content p{
+    font-size:  2rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+.offer-countdown .content .flex{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin:  1rem 0;
+}
+
+.offer-countdown .content .flex .box{
+    width:  10rem;
+    border-radius:  .5rem;
+    background-color: var(--yellow);
+    padding:  1rem;
+}
+.offer-countdown .content .flex .box .count{
+    font-size: 3rem;
+    color: -- var(--black);
+}
+
+.offer-countdown .content .flex .box span{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.offers .products-slider .box{
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    user-select: none;
+}
+.offers .products-slider .box img{
+    height: 30rem;
+    width:  100%;
+    object-fit: contain;
+    transition: .2s linear;
+    margin-bottom: 1rem;
+}
+
+.offers .products-slider .box:hover img{
+    transform: scale(1.1);
+}
+
+.offers .products-slider .box h3{
+    font-size:  1.6rem;
+    color: var(--orange);
+
+}
+
+
+
 
 
 

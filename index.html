@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+
     <!-- custom css file link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,11 +16,11 @@
 
     <header class="header">
         <section class="flex">
-            <a href="#home" class="logo"><img src="./img/logo2.PNG" alt=""></a>
+            <a href="./index.html" class="logo"><img src="./img/logo2.PNG" alt=""></a>
 
             <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#about">about</a>
+                <a href="#home">Trang chủ </a>
+                <a href="./gioithieu.html">Giới thiệu</a>
                 <a href="#offers">offers</a>
                 <a href="#contact">contact</a>
 
@@ -100,32 +102,100 @@
 
     <!-- offers section starts -->
     <section class="offers" id="offers">
-        <section class="products-slider">
-            <div>
-                <div class="box">
+
+        <div class="swiper products-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="./img/maydell1.jpg" alt="">
+                    <h3>Dell</h3>
+                    <p>sales 20%</p>
+                    <a href="#" class="btn">show</a>
+                </div>
+                <div class="swiper-slide box">
                     <img src="./img/maydell2.jpg" alt="">
                     <h3>Dell</h3>
                     <p>sales 20%</p>
                     <a href="#" class="btn">show</a>
                 </div>
-
-                <div class="box">
+                <div class="swiper-slide box">
+                    <img src="./img/mayacer1.jpg" alt="">
+                    <h3>Acer</h3>
+                    <p>sales 20%</p>
+                    <a href="#" class="btn">show</a>
+                </div>
+                <div class="swiper-slide box">
                     <img src="./img/mayacer2.jpg" alt="">
                     <h3>Acer</h3>
                     <p>sales 20%</p>
                     <a href="#" class="btn">show</a>
                 </div>
-                <div class="box">
+                <div class="swiper-slide box">
                     <img src="./img/maydohoa1.jpg" alt="">
                     <h3>Design</h3>
                     <p>sales 20%</p>
                     <a href="#" class="btn">show</a>
                 </div>
+                <div class="swiper-slide box">
+                    <img src="./img/maydohoa2.jpg" alt="">
+                    <h3>Design</h3>
+                    <p>sales 20%</p>
+                    <a href="#" class="btn">show</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/maygame1.jpg" alt="">
+                    <h3>Gaming</h3>
+                    <p>sales 20%</p>
+                    <a href="#" class="btn">show</a>
+                </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <!-- offers section ends -->
+
+    <!-- contact section starts -->
+    <div class="contact-container">
+        <section class="row">
+            <div class="info-container">
+                <div class="box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Địa chỉ:</h3>
+                        <p>Số 2 Đường Phạm Tu, Tân Triều, Hà Đông, Hà Nội </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Điện thoại:</h3>
+                        <p>0986777143 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email:</h3>
+                        <p>vuvanchinh34@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <footer action="" method="post">
+                <div class="footer">
+                    <h3>Bản đồ</h3>
+                    <a href="https://maps.app.goo.gl/PVyD3UGSCwwxdnuL7" target="_blank"><img src="./img/bando.PNG"
+                            alt=""></a>
+                    <h3>Face book</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100088288512773" target="_blank"><img
+                            src="./img/fanpage.PNG" alt=""></a>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!-- contact section ends -->
+
 
 
 
@@ -146,6 +216,7 @@
 
 
     <!-- custom js file link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

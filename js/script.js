@@ -59,3 +59,25 @@ function countDown() {
 setInterval(function () {
   countDown();
 }, 1000);
+
+var swiper = new Swiper(".products-slider", {
+  slidesPerView: 3,
+  spaceBetween: 2,
+  loop:true,
+  grabCursor:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 0,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

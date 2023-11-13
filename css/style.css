@@ -223,10 +223,81 @@ body{
 
 .offers .products-slider .box h3{
     font-size:  1.6rem;
-    color: var(--orange);
-
+    color: var(--black);
+    margin:  1rem 0;
 }
 
+.offers .products-slider .box p{
+    font-size:  1.6rem;
+    color: var(--orange);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--orange)
+}
+.contact-container{
+    background-color: rgb(194, 177, 146);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-container .row .info-container{
+    flex: 1 1 30rem;
+}
+
+.contact-container .row .info-container .box{
+    display: flex;
+    gap: 2rem;
+}
+.contact-container .row .info-container .box i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.9rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--gradient);
+    border-radius: .5rem;
+    text-align: center;
+}
+.contact-container .row .info-container .box:nth-child(2){
+    margin: 2rem 0;
+}
+
+.contact-container .row .info-container .box h3{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: var(--black);
+}
+.contact-container .row .info-container .box p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: .5rem;
+}
+.footer{
+    width: 40rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.footer img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.contact-container .row form{
+    flex: 1 1 50rem;
+}
+.introduction p{
+    font-size: medium;
+}
 
 
 

@@ -60,24 +60,53 @@ setInterval(function () {
   countDown();
 }, 1000);
 
-var swiper = new Swiper(".products-slider", {
-  slidesPerView: 3,
-  spaceBetween: 2,
-  loop:true,
-  grabCursor:true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 0,
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 3, 
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    768: {
-      slidesPerView: 2,
+    autoplay: {
+      delay: 2000, 
+      disableOnInteraction: false, // Cho phép tự động chuyển động khi người dùng tương tác
     },
-    1024: {
-      slidesPerView: 4,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
     },
-  },
+  });
 });
+
+
+
+
+// var swiper = new Swiper(".products-slider", {
+//   slidesPerView: 3,
+//   spaceBetween: 2,
+//   loop:true,
+//   grabCursor:true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 0,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//     },
+//   },
+// });

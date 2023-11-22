@@ -52,9 +52,11 @@ section{
 }
 
 body{
+    font-family: Arial, sans-serif;
     height: 300rem;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .btn{
@@ -299,6 +301,54 @@ body{
 }
 .introduction p{
     font-size: medium;
+}
+
+.service-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: #fafafa;
+}
+
+.feature img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
 }
 
 
